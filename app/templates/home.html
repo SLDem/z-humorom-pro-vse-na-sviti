@@ -1,4 +1,13 @@
-{% block title %}Home{% endblock %}
-{% block content %}
-<p>HOLA</p>
+{% extends "base.html" %}
+{% block app_content %}
+
+
+
+    <div class="pagination-page-info">
+    {% for poem in poems %}
+        {% include "_poem.html" %}
+    {% endfor %}
+    {{ pagination.info }}
+    {{ pagination.links }}
+    </div>
 {% endblock %}

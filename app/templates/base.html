@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            {% block title %}{{title}}{% endblock %}
+        </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+    </head>
+    <body>
+        <div id="navbar-container">
+            <div id="navbar">
+                <div class="link-div">
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="{{ url_for('home') }}">Гуморески</a></li>
+                            <li><a href="{{ url_for('about') }}">Про Автора</a></li>
+                            <li><a href="{{ url_for('add_poem') }}">Add</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+            {% block content %}
+            <div class="container-fluid" style="margin-top: 100px;">
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                    <div class="alert alert-info" role="alert">{{message}}</div>
+                    {% endfor %}
+                {% endif %}
+                {% endwith %}
+
+                {# application content needs to be provided in the app_content block #}
+                {% block app_content %}{% endblock %}
+            </div>
+            {% endblock %}
+    </body>
+</html>
+

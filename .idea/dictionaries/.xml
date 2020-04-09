@@ -2,6 +2,9 @@
   <dictionary name="Ярослав">
     <words>
       <w>endblock</w>
+      <w>endfor</w>
+      <w>navbar</w>
+      <w>webkit</w>
     </words>
   </dictionary>
 </component>
