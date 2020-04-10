@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="shortcut icon" type="image/x-icon" href="static/icon.png" sizes="32x32">
         <title>
             {% block title %}{{title}}{% endblock %}
         </title>
@@ -11,9 +12,11 @@
                 <div class="link-div">
                     <nav>
                         <ul class="nav-links">
-                            <li><a href="{{ url_for('home') }}">Гуморески</a></li>
+                            <li><a href="{{ url_for('poems', page_num=1) }}">Вірші</a></li>
+                            <li><a href="{{ url_for('humoresques', hum_page_num=1) }}">Гуморески</a></li>
                             <li><a href="{{ url_for('about') }}">Про Автора</a></li>
-                            <li><a href="{{ url_for('add_poem') }}">Add</a></li>
+                            <li><a href="{{ url_for('add_poem') }}">Add Poem</a></li>
+                            <li><a href="{{ url_for('add_humoresque') }}">Add Hum</a></li>
                         </ul>
                     </nav>
                 </div>

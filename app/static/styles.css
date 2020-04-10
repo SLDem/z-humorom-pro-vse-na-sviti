@@ -5,7 +5,7 @@
 #navbar{display: flex; justify-content: space-between; align-items: center; font-size: 1.2rem; margin-bottom: 100px;}
 
 
-#poem-container {width: 440px; border: 1px solid white; color: white; margin-left: 40px; border-radius: 5px;}
+#poem-container {width: 440px; border: 1px solid white; color: white; margin-left: 65rem; margin-top: -5.7rem; border-radius: 5px;}
 #title{
     width: 100%; height: 40px;background:
     url('/static/title_bg.jpg') no-repeat center center fixed;
@@ -76,18 +76,7 @@ input{
     transition: 0.3s ease-out;
 }
 
-.pagination-page-info {
-    padding: .6em;
-    padding-left: 0;
-    width: 40em;
-    margin: .5em;
-    margin-left: 0;
-    font-size: 12px;
-}
-.pagination-page-info b {
-    color: black;
-    background: #6aa6ed;
-    padding-left: 2px;
-    padding: .1em .25em;
-    font-size: 150%;
-}
+.pagination-links{
+    text-align: center;
+    float: bottom 0;
+    }

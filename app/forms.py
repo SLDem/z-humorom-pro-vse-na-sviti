@@ -7,3 +7,9 @@ class PoemForm(FlaskForm):
     title = StringField('Титул', validators=[DataRequired()])
     text = TextAreaField('Текст', validators=[DataRequired()])
     submit = SubmitField('Додати')
+
+
+class HumoresqueForm(FlaskForm):
+    title = StringField('Титул', validators=[DataRequired()])
+    text = TextAreaField('Текст', validators=[DataRequired()])
+    submit = SubmitField('Додати')

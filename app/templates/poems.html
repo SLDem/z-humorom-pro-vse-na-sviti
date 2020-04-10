@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block app_content %}
+
+    {% for poem in poems.items %}
+        {% include "_poem.html" %}
+    {% endfor %}
+
+    <div class="pagination-links">
+    {% for page in poems.iter_pages() %}
+        {% if page %}
+            <a href="{{ url_for('poems', page_num=page) }}">{{ page }}</a>
+        {% else %}
+            ...
+        {% endif %}
+    {% endfor %}
+    </div>
+{% endblock %}
