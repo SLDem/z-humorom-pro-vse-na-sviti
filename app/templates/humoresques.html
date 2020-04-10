@@ -6,7 +6,7 @@
     {% endfor %}
 
     <div class="pagination-links">
-    {% for humoresque in humoresques.iter_pages() %}
+    {% for page in humoresques.iter_pages() %}
         {% if page %}
             <a href="{{ url_for('humoresques', hum_page_num=page) }}">{{ page }}</a>
         {% else %}
@@ -14,4 +14,5 @@
         {% endif %}
     {% endfor %}
     </div>
+
 {% endblock %}
