@@ -8,9 +8,13 @@
     <div class="pagination-links">
     {% for page in humoresques.iter_pages() %}
         {% if page %}
-            <a href="{{ url_for('humoresques', hum_page_num=page) }}">{{ page }}</a>
+            {% if page != humoresques.page %}
+                <a href="{{ url_for('humoresques', hum_page_num=page) }}">{{ page }}</a>
+            {% else %}
+                <u style="color: white;">{{ page }}</u>
+            {% endif %}
         {% else %}
-            ...
+            <span class=ellipsis style="color: white;">…</span>
         {% endif %}
     {% endfor %}
     </div>

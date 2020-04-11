@@ -1,13 +1,13 @@
 from flask import redirect, render_template, url_for, request
 from app import app, db
-from app.forms import PoemForm, HumoresqueForm
+from app.forms import PoemForm, HumoresqueForm, SearchForm
 from app.models import Poem, Humoresque
 
 
 @app.route('/')
 @app.route('/about')
 def about():
-    return render_template('about.html', title='Про Автора')
+    return render_template('about.html', title='З Гумором Про Все На Світі')
 
 
 @app.route('/poems/<int:page_num>')
@@ -22,6 +22,17 @@ def humoresques(hum_page_num):
     return render_template('humoresques.html', title='Гуморески',  humoresques=humoresques)
 
 
+@app.route('/search', methods=['GET', 'POST'])
+def search():
+    form = SearchForm()
+    if form.validate_on_submit():
+        poems = Poem.query.filter(Poem.title.like('%' + form.search_field.data + '%'))
+        humoresques = Humoresque.query.filter(Humoresque.title.like('%' + form.search_field.data + '%'))
+        return render_template('search.html', poems=poems, humoresques=humoresques, form=form, title='Пошук')
+    return render_template('search.html', form=form, title='Пошук')
+
+
+# adding and deleting content
 @app.route('/add_poem', methods=['POST', 'GET'])
 def add_poem():
     form = PoemForm()
@@ -42,3 +53,19 @@ def add_humoresque():
         db.session.commit()
         return redirect(url_for('add_humoresque'))
     return render_template('add_humoresque.html', title="Add humoresque", form=form)
+
+
+@app.route('/delete_poem/<int:poem_id>')
+def del_poem(poem_id):
+    poem = Poem.query.filter_by(id=poem_id).first_or_404()
+    db.session.delete(poem)
+    db.session.commit()
+    return redirect(url_for('about'))
+
+
+@app.route('/delete_hum/<int:hum_id>')
+def del_hum(hum_id):
+    hum = Humoresque.query.filter_by(id=hum_id).first_or_404()
+    db.session.delete(hum)
+    db.session.commit()
+    return redirect(url_for('about'))

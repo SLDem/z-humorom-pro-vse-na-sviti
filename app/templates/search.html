@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block app_content %}
+
+    <h2 style="color: white;">Пошук віршів та гуморесок по назві:</h2>
+
+    <form action="" method="post" style="margin-bottom: 4%; width: 640px;">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <input style="width: 640px; margin-bottom: 1rem;" type=text name=search_field> <br>
+        <input type=submit value=Знайти name="submit">
+    </form>
+
+
+    <div style="margin-top: -375px;">
+    {% for poem in poems %}
+        {% include "_poem.html" %}
+    {% endfor %}
+
+    {% for humoresque in humoresques %}
+        {% include "_humoresque.html" %}
+    {% endfor %}
+    </div>
+
+{% endblock %}
