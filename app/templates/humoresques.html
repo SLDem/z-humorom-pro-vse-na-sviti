@@ -11,7 +11,7 @@
             {% if page != humoresques.page %}
                 <a href="{{ url_for('humoresques', hum_page_num=page) }}">{{ page }}</a>
             {% else %}
-                <u style="color: white;">{{ page }}</u>
+                <span style="color: white;">({{ page }})</span>
             {% endif %}
         {% else %}
             <span class=ellipsis style="color: white;">…</span>
