@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="shortcut icon" type="image/x-icon" href="static/icon.png" sizes="32x32">
+        <link rel="icon" href="{{ url_for('static', filename='icon.png') }}" sizes="32x32">
         <title>
             {% block title %}{{title}}{% endblock %}
         </title>
