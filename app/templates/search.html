@@ -2,11 +2,11 @@
 {% import "bootstrap/wtf.html" as wtf %}
 {% block app_content %}
 
-    <h2 style="color: white; margin-left: 44px;">Пошук віршів та гуморесок по назві:</h2>
+    <h2 style="color: white; margin-left: 44px;">Пошук віршів та гуморесок:</h2>
 
     <form action="" method="post" style="margin-bottom: 4%; width: 560px; margin-left: 44px;">
         <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-        <input style="width: 550px; margin-bottom: 1rem;" type=text name=search_field> <br>
+        <input style="width: 548px; margin-bottom: 1rem;" type=text name=search_field> <br>
         <input type=submit style="color: rgb(4, 73, 150);" value=Знайти name="submit">
     </form>
 
@@ -17,6 +17,14 @@
     {% endfor %}
 
     {% for humoresque in humoresques %}
+        {% include "_humoresque.html" %}
+    {% endfor %}
+
+    {% for poem in poems_by_text %}
+        {% include "_poem.html" %}
+    {% endfor %}
+
+    {% for humoresque in humoresques_by_text %}
         {% include "_humoresque.html" %}
     {% endfor %}
     </div>

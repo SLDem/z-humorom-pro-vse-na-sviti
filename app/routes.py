@@ -28,7 +28,10 @@ def search():
     if form.validate_on_submit():
         poems = Poem.query.filter(Poem.title.like('%' + form.search_field.data + '%'))
         humoresques = Humoresque.query.filter(Humoresque.title.like('%' + form.search_field.data + '%'))
-        return render_template('search.html', poems=poems, humoresques=humoresques, form=form, title='Пошук')
+        poems_by_text = Poem.query.filter(Poem.text.like('%' + form.search_field.data + '%'))
+        humoresques_by_text = Humoresque.query.filter(Humoresque.text.like('%' + form.search_field.data + '%'))
+        return render_template('search.html', poems=poems, humoresques=humoresques, poems_by_text=poems_by_text,
+                               humoresques_by_text=humoresques_by_text, form=form, title='Пошук')
     return render_template('search.html', form=form, title='Пошук')
 
 

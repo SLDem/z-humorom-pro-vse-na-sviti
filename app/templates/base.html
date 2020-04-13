@@ -5,6 +5,7 @@
             {% block title %}{{title}}{% endblock %}
         </title>
         <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div id="navbar-container">
@@ -23,6 +24,7 @@
                 </div>
             </div>
         </div>
+        <div id="page_container">
             {% block content %}
             <div class="container-fluid" style="margin-top: 100px;">
                 {% with messages = get_flashed_messages() %}
@@ -37,6 +39,7 @@
                 {% block app_content %}{% endblock %}
             </div>
             {% endblock %}
+        </div>
     </body>
 </html>
 
