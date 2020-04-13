@@ -14,7 +14,7 @@
     border-radius: 12px 12px 0 0;}
 #text{
     background: url('/static/poem_bg.jpg') no-repeat center center;
-    width: 100%;
+    width: 440px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -72,6 +72,10 @@ input{
     font-size: 1.5rem;
     padding: 10px;}
 
+input[type=text]{
+    width: 540px;
+    margin-bottom: 5px;}
+
 
 .nav-links{
     display: flex;
@@ -119,8 +123,87 @@ search.dropdown-toggle:focus {
         margin-left: 90px;
         margin-top: 0;
         margin-bottom: -80px;}
-    #page-container{
-        margin-top: 100px;}
     #search{
         margin-bottom: 400px;}
+}
+
+@media screen and (max-width: 662px){
+    #navbar{
+        position: static;
+        margin-bottom:50px;
+        margin-top: -15px;
+        margin-left: -40px;}
+    #poem-container{
+        width:340px;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: -80px;}
+    #title{
+        font-size: 1.3rem;}
+    #text{
+        width: 340px;
+        font-size: 0.8rem;}
+    #search{
+        margin-bottom: 400px;
+        width: 30%;}
+    .nav-links a{
+        padding: 5px;}
+    .nav-links a:hover{
+        padding: 10px;}
+    input[type=text] {
+        width: 340px;
+        margin-left: -45px;}
+    input[type=submit] {
+        width: 100px;
+        margin-top: 5px;
+        margin-left: -45px;}
+    h2 {
+        font-size: 1rem;
+        margin-left: -80px;
+        margin-top: -50px;}
+}
+
+
+@media screen and (max-width: 360px){
+    #about_author_photo{
+        margin-left: 5px;
+        margin-top: -55px;}
+    #about_author_text{
+        margin-left: 5px;}
+    #navbar{
+        position: static;
+        margin-bottom:50px;
+        margin-top: -20px;
+        margin-left: -43px;}
+    #poem-container{
+        width:300px;
+        margin-left: 0px;
+        margin-top: 0;
+        margin-bottom: -80px;}
+    #title{
+        font-size: 1.3rem;}
+    #text{
+        width: 300px;
+        font-size: 0.7rem;}
+    #search{
+        margin-bottom: 400px;
+        width: 100px;
+        margin-left: -15px;
+        }
+    .nav-links a{
+        padding: 2px;}
+    .nav-links a:hover{
+        padding: 5px;}
+    input[type=text] {
+        width: 300px;
+        margin-left: 15px;}
+    input[type=submit] {
+        width: 100px;
+        margin-top: 5px;
+        margin-left: 15px;}
+    h2 {
+        font-size: 1rem;
+        margin-left: -80px;
+        margin-top: -50px;}
+
 }
