@@ -147,6 +147,10 @@ search.dropdown-toggle:focus {
     #search{
         margin-bottom: 400px;
         }
+    .pagination-links {
+        margin-top: 100px;
+        margin-left: -150px;;
+        }
 }
 
 @media screen and (max-width: 662px){
