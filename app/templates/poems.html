@@ -3,7 +3,7 @@
 
     {% for poem in poems.items %}
         {% include "_poem.html" %}
-        <a href="{{ url_for('del_poem', poem_id=poem.id) }}">DELETE</a>
+        <!-- <a href="{{ url_for('del_poem', poem_id=poem.id) }}">DELETE</a> -->
     {% endfor %}
 
     <div class="pagination-links">
