@@ -26,12 +26,13 @@ def humoresques(hum_page_num):
 def search():
     form = SearchForm()
     if form.validate_on_submit():
-        poems = Poem.query.filter(Poem.title.like('%' + form.search_field.data + '%'))
-        humoresques = Humoresque.query.filter(Humoresque.title.like('%' + form.search_field.data + '%'))
+        poems_by_title = Poem.query.filter(Poem.title.like('%' + form.search_field.data + '%'))
+        humoresques_by_title = Humoresque.query.filter(Humoresque.title.like('%' + form.search_field.data + '%'))
         poems_by_text = Poem.query.filter(Poem.text.like('%' + form.search_field.data + '%'))
         humoresques_by_text = Humoresque.query.filter(Humoresque.text.like('%' + form.search_field.data + '%'))
-        return render_template('search.html', poems=poems, humoresques=humoresques, poems_by_text=poems_by_text,
-                               humoresques_by_text=humoresques_by_text, form=form, title='Пошук')
+        poems = poems_by_title.union(poems_by_text)
+        humoresques = humoresques_by_title.union(humoresques_by_text)
+        return render_template('search.html', poems=poems, humoresques=humoresques, form=form, title='Пошук')
     return render_template('search.html', form=form, title='Пошук')
 
 

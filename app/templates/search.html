@@ -13,21 +13,13 @@
     </div>
 
     <div style="margin-top: -375px;">
-    {% for poem in poems %}
-        {% include "_poem.html" %}
-    {% endfor %}
+        {% for poem in poems %}
+            {% include "_poem.html" %}
+        {% endfor %}
 
-    {% for humoresque in humoresques %}
-        {% include "_humoresque.html" %}
-    {% endfor %}
-
-    {% for poem in poems_by_text %}
-        {% include "_poem.html" %}
-    {% endfor %}
-
-    {% for humoresque in humoresques_by_text %}
-        {% include "_humoresque.html" %}
-    {% endfor %}
+        {% for humoresque in humoresques %}
+            {% include "_humoresque.html" %}
+        {% endfor %}
     </div>
 
 {% endblock %}
