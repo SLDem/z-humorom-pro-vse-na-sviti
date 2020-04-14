@@ -136,10 +136,13 @@ search.dropdown-toggle:focus {
         top: auto;
         }
     #poem-container{
-        width:440px;
+        width:455px;
         margin-left: 90px;
         margin-top: 0;
         margin-bottom: -80px;
+        }
+    #text {
+        width: 455px;
         }
     #search{
         margin-bottom: 400px;
