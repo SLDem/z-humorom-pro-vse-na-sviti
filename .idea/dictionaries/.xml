@@ -5,6 +5,8 @@
       <w>endblock</w>
       <w>endfor</w>
       <w>endwith</w>
+      <w>gettingstarted</w>
+      <w>gunicorn</w>
       <w>humoresque</w>
       <w>humoresques</w>
       <w>navbar</w>
