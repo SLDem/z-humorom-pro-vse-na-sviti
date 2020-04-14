@@ -1,1 +1,1 @@
-web: flask db upgrade; gunicorn z-humorom-pro-vse-na-sviti:main
+web: flask db upgrade; gunicorn main:z-humorom-pro-vse-na-sviti
