@@ -1,8 +1,8 @@
-from flask import redirect, render_template, url_for, session, request
+from flask import redirect, render_template, url_for
 from app import app, db
 from app.forms import PoemForm, HumoresqueForm, SearchForm
 from app.models import Poem, Humoresque
-from werkzeug.datastructures import MultiDict
+
 
 @app.route('/')
 @app.route('/about')
