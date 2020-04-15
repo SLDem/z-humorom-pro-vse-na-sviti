@@ -2,7 +2,7 @@
 {% import "bootstrap/wtf.html" as wtf %}
 {% block app_content %}
 
-    <h2 style="color: white; margin-left: 44px;">Пошук віршів та гуморесок:</h2>
+    <div class="search-text"><p>Пошук віршів та гуморесок:</p></div>
 
     <div id="search">
         <form action="" method="post">
@@ -12,7 +12,7 @@
         </form>
     </div>
 
-    <div style="margin-top: -375px;">
+    <div style="margin-top: -340px;">
         {% for poem in poems %}
             {% include "_poem.html" %}
         {% endfor %}
