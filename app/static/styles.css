@@ -8,11 +8,10 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: 'Lobster Two', cursive;
-    font-size: 2.3rem;
+    font-size: 2.7rem;
     color: white;
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 23px;
     border-radius: 12px 12px 0 0;
     border-bottom: 2px solid #353535;
     }
@@ -21,8 +20,7 @@
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(5px);
     width: 100%;
-    
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     color: #353535;
     text-align: center;
     margin-top: -15px;
@@ -140,6 +138,7 @@ search.dropdown-toggle:focus{
         }
     #text {
         width: 455px;
+        font-size: 1.2rem;
         }
     #search{
         margin-bottom: 400px;
@@ -164,10 +163,12 @@ search.dropdown-toggle:focus{
         margin-bottom: -80px;
         }
     #title{
-        font-size: 1.3rem;}
+        font-size: 1.3rem;
+        padding-bottom: -50px;
+        }
     #text{
         width: 340px;
-        font-size: 0.8rem;}
+        font-size: 0.9rem;}
     #search{
         margin-bottom: 400px;
         width: 30%;}
