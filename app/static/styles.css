@@ -1,4 +1,4 @@
-#poem-container {width: 600px; border: 3px solid #black; color: white; margin-left: 50%; margin-top: -5.7rem; margin-bottom: 75px; border-radius: 15px;}
+#poem-container {width: 600px; color: white; margin-left: 50%; margin-top: -5.7rem; margin-bottom: 75px; border-radius: 15px;}
 #title{
     width: 100%; height: 40px;
     background-color: rgba(237, 200, 143, 0.85);
@@ -12,7 +12,6 @@
     text-align: center;
     padding-bottom: 23px;
     border-radius: 12px 12px 0 0;
-    border-bottom: 2px solid #353535;
     }
 #text{
     background-color: rgba(255, 255, 255, 0.7);
@@ -21,7 +20,7 @@
     font-size: 1.9rem;
     color: #353535;
     text-align: center;
-    margin-top: -15px;
+    margin-top: -23px;
     margin-bottom: -13px;
     padding-top: 15px;
     padding-bottom: 35px;
@@ -29,11 +28,11 @@
     }
 
 
-#navbar-container {position: absolute; top: 0; height: 100px; width: 50%;}
-#page-container {position: relative; min-height: 100%; height: auto !important; margin-top: 50%; width: 1200px;}
+#navbar-container {position: absolute; top: 0; height: 100px; width: 100%;}
+#page-container {position: relative; min-height: 100%; height: auto !important; margin-top: 50%; width: 100%;}
 
 
-#navbar{position: fixed; display: flex; justify-content: space-between; align-items: center; font-size: 1.2rem; margin-bottom: 100px; margin-right: -500px;}
+#navbar{position: fixed; display: flex; justify-content: space-between; align-items: center; font-size: 1.4rem; margin-bottom: 100px; margin-right: -500px;}
 
 #about_author_photo{
     border-radius 5px 5px 5px 0;
@@ -42,12 +41,12 @@
     }
 
 #about_author_text{
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
     color: white;
-    font-family: 'Lobster Two', cursive;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 10px;
-    margin-left: 44px;}
+    margin-left: 44px;
+    }
 
 a{
     text-decoration: none;
@@ -60,12 +59,12 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: 'Lobster Two', cursive;
+    font-family: Alice;
+    font-size: 1.8rem;
     }
 
 input{
-    font-family: 'Lobster Two', cursive;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 10px;
     }
 
@@ -107,7 +106,7 @@ input[type=text]{
     }
 
 .search-text{
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
     color: white;
     margin-left: 44px;
     font-size: 25px;
@@ -125,17 +124,18 @@ search.dropdown-toggle:focus{
      border-radius: 2px;
      }
 
-@media screen and (max-width: 1431px){
+@media screen and (max-width: 1430px){
     #navbar{
         position: static;
         margin-bottom: 150px;
         top: auto;
+        font-size: 1.4rem;
         }
     .nav-links {
         position: fixed;
         z-index: 10;
         left: 50%;
-        margin-left: -16.3em;
+        margin-left: -15.3em;
         }
     #poem-container{
         width:455px;
@@ -187,6 +187,7 @@ search.dropdown-toggle:focus{
         margin-bottom:50px;
         margin-top: -15px;
         margin-left: -44px;
+        font-size: 1.2rem;
         }
     #poem-container{
         width:340px;
@@ -203,7 +204,8 @@ search.dropdown-toggle:focus{
         }
     #text{
         width: 340px;
-        font-size: 0.9rem;}
+        font-size: 0.9rem;
+        }
     #search{
         margin-bottom: 400px;
         max-width: 340px;
@@ -222,13 +224,13 @@ search.dropdown-toggle:focus{
         position: fixed;
         z-index: 10;
         left: 50%;
-        margin-left: -11em;
+        margin-left: -11.75em;
         }
     .nav-links a{
-        padding: 5px;
+        padding: 7px;
         }
     .nav-links a:hover{
-        padding: 10px;
+        padding: 12px;
         }
     h2{
         font-size: 1rem;
@@ -259,14 +261,7 @@ search.dropdown-toggle:focus{
 }
 
 
-@media screen and (max-width: 380px){
-    #about_author_photo{
-        margin-left: 5px;
-        margin-top: -55px;
-        }
-    #about_author_text{
-        margin-left: 5px;
-        }
+@media screen and (max-width: 410px){
     #navbar{
         position: static;
         z-index: 10;
@@ -274,9 +269,16 @@ search.dropdown-toggle:focus{
         margin-top: -20px;
         margin-left: -43px;
         }
+    #about_author_photo{
+        margin-left: 5px;
+        margin-top: -55px;
+        }
+    #about_author_text{
+        margin-left: 5px;
+        }
     #poem-container{
-        width:300px;
-        margin-left: 0px;
+        width:260px;
+        margin-left: 30px;
         margin-top: 0;
         margin-bottom: -80px;
         margin: 0 auto;
@@ -287,12 +289,12 @@ search.dropdown-toggle:focus{
         font-size: 1.3rem;
         }
     #text{
-        width: 300px;
+        width: 100%;
         font-size: 0.7rem;
         }
     #search{
         margin-bottom: 400px;
-        max-width: 330px;
+        max-width: 95%;
         margin-left: -15px;
         margin: 0 auto;
         position: float;
@@ -300,12 +302,14 @@ search.dropdown-toggle:focus{
     .nav-links{
         position: fixed;
         left: 50%;
-        margin-left: -11em;
+        margin-left: -13.75em;
+        margin-top: 22px;
+        font-size: 0.8rem;
     .nav-links a{
-        padding: 1px;
+        padding: 5px;
         }
     .nav-links a:hover{
-        padding: 3px;
+        padding: 10px;
         }
     input[type=text]{
         width: 300px;
@@ -337,5 +341,4 @@ search.dropdown-toggle:focus{
         margin-left: 0.5em;
         margin-right: 0.5em;
         }
-}
 }
