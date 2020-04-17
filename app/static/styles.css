@@ -31,7 +31,7 @@
 
 
 #navbar-container {position: absolute; top: 0; height: 100px; width: 90%;}
-#page-container {position: relative; min-height: 100%; height: auto !important; margin-top: 50%; width: 100%;}
+#page-container {position: relative;  margin-top: 50%; width: 100%;}
 
 
 #navbar{position: fixed; display: flex; justify-content: space-between; align-items: center; font-size: 1.4rem; margin-bottom: 100px; margin-right: -500px;}
@@ -132,6 +132,14 @@ search.dropdown-toggle:focus{
      border-radius: 2px;
      }
 
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 @media screen and (max-width: 1430px){
     #navbar{
         position: static;
@@ -155,7 +163,7 @@ search.dropdown-toggle:focus{
         }
     #text{
         width: 455px;
-        font-size: 1.2rem;
+        font-size: 1.07rem;
         }
     #search{
         margin-bottom: 400px;
@@ -188,6 +196,10 @@ search.dropdown-toggle:focus{
         margin-right: 7em;
         }
     html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
         overflow-x: hidden;
     }
 }
@@ -215,7 +227,7 @@ search.dropdown-toggle:focus{
         }
     #text{
         width: 340px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         }
     #search{
         margin-bottom: 400px;
@@ -235,7 +247,7 @@ search.dropdown-toggle:focus{
         position: fixed;
         z-index: 10;
         left: 50%;
-        margin-left: -11.75em;
+        margin-left: -12.2em;
         }
     .nav-links a{
         padding: 7px;
@@ -284,9 +296,6 @@ search.dropdown-toggle:focus{
         margin-left: 5px;
         margin-top: -55px;
         }
-    #about_author_text{
-        margin-left: 5px;
-        }
     #poem-container{
         width:260px;
         margin-left: 30px;
@@ -301,7 +310,7 @@ search.dropdown-toggle:focus{
         }
     #text{
         width: 100%;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         }
     #search{
         margin-bottom: 400px;
@@ -349,15 +358,6 @@ search.dropdown-toggle:focus{
         margin: 0 auto;
         text-align: left;
         position: float;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
+        margin-left: 50px;
         }
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
 }
