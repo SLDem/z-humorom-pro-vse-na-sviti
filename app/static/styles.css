@@ -149,6 +149,7 @@ html, body {
         margin-bottom: 150px;
         top: auto;
         font-size: 1.4rem;
+        z-index:10
         }
     .nav-links {
         position: fixed;
@@ -210,6 +211,7 @@ html, body {
 @media screen and (max-width: 662px){
     #navbar{
         position: fixed;
+        z-index: 10;
         margin-bottom:50px;
         margin-top: -15px;
         margin-left: -44px;
@@ -328,9 +330,9 @@ html, body {
     .nav-links{
         position: fixed;
         left: 50%;
-        margin-left: -14.4em;
+        margin-left: -12.6em;
         margin-top: 0;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     .nav-links a{
         padding: 5px;
         }
