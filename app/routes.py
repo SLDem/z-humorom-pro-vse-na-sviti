@@ -40,40 +40,40 @@ def search():
     return render_template('search.html', form=form, title='Пошук')
 
 
-# adding and deleting content
-@app.route('/add_poem', methods=['POST', 'GET'])
-def add_poem():
-    form = PoemForm()
-    if form.validate_on_submit():
-        poem = Poem(title=form.title.data, text=form.text.data)
-        db.session.add(poem)
-        db.session.commit()
-        return redirect(url_for('add_poem'))
-    return render_template('add_poem.html', title="Add poem", form=form)
-
-
-@app.route('/add_humoresque', methods=['POST', 'GET'])
-def add_humoresque():
-    form = HumoresqueForm()
-    if form.validate_on_submit():
-        humoresque = Humoresque(title=form.title.data, text=form.text.data)
-        db.session.add(humoresque)
-        db.session.commit()
-        return redirect(url_for('add_humoresque'))
-    return render_template('add_humoresque.html', title="Add humoresque", form=form)
-
-
-@app.route('/delete_poem/<int:poem_id>')
-def del_poem(poem_id):
-    poem = Poem.query.filter_by(id=poem_id).first_or_404()
-    db.session.delete(poem)
-    db.session.commit()
-    return redirect(url_for('about'))
-
-
-@app.route('/delete_hum/<int:hum_id>')
-def del_hum(hum_id):
-    hum = Humoresque.query.filter_by(id=hum_id).first_or_404()
-    db.session.delete(hum)
-    db.session.commit()
-    return redirect(url_for('about'))
+# # adding and deleting content
+# @app.route('/add_poem_password_dtenbagilion1032123123123123', methods=['POST', 'GET'])
+# def add_poem():
+#     form = PoemForm()
+#     if form.validate_on_submit():
+#         poem = Poem(title=form.title.data, text=form.text.data)
+#         db.session.add(poem)
+#         db.session.commit()
+#         return redirect(url_for('add_poem'))
+#     return render_template('add_poem.html', title="Add poem", form=form)
+#
+#
+# @app.route('/add_humoresque_passwordtenbagilion112312312323232', methods=['POST', 'GET'])
+# def add_humoresque():
+#     form = HumoresqueForm()
+#     if form.validate_on_submit():
+#         humoresque = Humoresque(title=form.title.data, text=form.text.data)
+#         db.session.add(humoresque)
+#         db.session.commit()
+#         return redirect(url_for('add_humoresque'))
+#     return render_template('add_humoresque.html', title="Add humoresque", form=form)
+#
+#
+# @app.route('/delete_poem/<int:poem_id>')
+# def del_poem(poem_id):
+#     poem = Poem.query.filter_by(id=poem_id).first_or_404()
+#     db.session.delete(poem)
+#     db.session.commit()
+#     return redirect(url_for('about'))
+#
+#
+# @app.route('/delete_hum/<int:hum_id>')
+# def del_hum(hum_id):
+#     hum = Humoresque.query.filter_by(id=hum_id).first_or_404()
+#     db.session.delete(hum)
+#     db.session.commit()
+#     return redirect(url_for('about'))

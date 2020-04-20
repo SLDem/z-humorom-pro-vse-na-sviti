@@ -3,6 +3,7 @@
 
     {% for humoresque in humoresques.items %}
         {% include "_humoresque.html" %}
+        <!-- <a href="{{ url_for('del_hum', hum_id=humoresque.id) }}">DELETE</a> -->
     {% endfor %}
 
     <div class="pagination-links">
