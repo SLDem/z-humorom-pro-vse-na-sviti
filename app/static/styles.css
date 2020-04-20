@@ -7,6 +7,7 @@
     font-size: 2.3rem;
     font-family: Alice;
     color: white;
+    text-shadow: 0px 1px 2px #555;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -18,6 +19,7 @@
     width: 100%;
     font-family: Alice;
     font-size: 1.34rem;
+    text-shadow: 0px 0px 2px white;
     color: #353535;
     text-align: center;
     margin-top: -23px;
@@ -109,6 +111,13 @@ input[type=text]{
     transition: 0.3s ease-out;
     }
 
+.nav-links a:active{
+    text-align: center;
+    padding: 40px;
+    background: rgb(26, 180, 250);
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+    }
 
 .pagination-links{
     text-align: center;
@@ -117,7 +126,7 @@ input[type=text]{
     }
 
 .search-text{
-    text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+    text-shadow: 2px 3px 4px #555;
     color: white;
     margin-left: 44px;
     font-size: 25px;
@@ -379,6 +388,7 @@ html, body {
         text-align: left;
         position: float;
         margin-left: 50px;
+        z-index: -1;
         }
     html, body {
         background: url('/static/day-mnt.jpg') no-repeat center center fixed;
