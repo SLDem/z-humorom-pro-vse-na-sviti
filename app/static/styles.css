@@ -343,11 +343,14 @@ html, body {
         margin-left: -12.1em;
         margin-top: 0;
         font-size: 0.9rem;
+        z-index: 100;
     .nav-links a{
         padding: 5px;
+        z-index: 100;
         }
     .nav-links a:hover{
         padding: 10px;
+        z-index: 100;
         }
     input[type=text]{
         width: 300px;
@@ -371,16 +374,19 @@ html, body {
         margin-bottom: 30px;
         text-align: center;
         position: float;
-        z-index: 10;
         }
     #about_author_text{
         margin: 0 auto;
         text-align: left;
         position: float;
         margin-left: 50px;
-        z-index: 10;
         }
     html, body {
+        background: url('/static/day-mnt.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         width: 100%;
         height: 100%;
         margin: 0;
