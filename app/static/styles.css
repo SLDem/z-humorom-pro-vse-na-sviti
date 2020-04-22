@@ -82,6 +82,7 @@ input[type=text]{
 
 .navbar{
     position: fixed;
+    justify-content: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +91,7 @@ input[type=text]{
     }
 
 .nav-links{
-    left: 41%;
+    justify-content: center;
     display: inline-flex;
     list-style: none;
     }
@@ -101,6 +102,7 @@ input[type=text]{
     padding: 30px;
     background: rgb(0, 128, 228);
     transition: 0.3s ease-out;
+    margin: 0 auto;
     }
 
 .nav-links a:hover{
@@ -260,9 +262,9 @@ html, body {
         }
     .nav-links{
         position: fixed;
+        justify-content: center;
         z-index: 10;
-        left: 50%;
-        margin-left: -11em;
+        margin-left: -10.7em;
         margin-top: 0px;
         }
     .nav-links a{
