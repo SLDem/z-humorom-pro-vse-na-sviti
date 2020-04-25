@@ -12,18 +12,16 @@
     <body>
         <div id="navbar-container">
             <div class="navbar">
-
-                    <nav>
-                        <ul class="nav-links">
-                            <li><a href="{{ url_for('poems', page_num=1) }}">Вірші</a></li>
-                            <li><a href="{{ url_for('humoresques', hum_page_num=1) }}">Гуморески</a></li>
-                            <li><a href="{{ url_for('search') }}">Пошук</a></li>
-                            <li><a href="{{ url_for('about') }}">Про<span style="opacity: 0;">і</span>Автора</a></li>
-                            <!-- <li><a href="{{ url_for('add_poem') }}">Add Poem</a></li> -->
-                            <!-- <li><a href="{{ url_for('add_humoresque') }}">Add Hum</a></li> -->
-                        </ul>
-                    </nav>
-               
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="{{ url_for('poems', page_num=1) }}">Вірші</a></li>
+                        <li><a href="{{ url_for('humoresques', hum_page_num=1) }}">Гуморески</a></li>
+                        <li><a href="{{ url_for('search') }}">Пошук</a></li>
+                        <li><a href="{{ url_for('about') }}">Про<span style="opacity: 0;">і</span>Автора</a></li>
+                        <!-- <li><a href="{{ url_for('add_poem') }}">Add Poem</a></li> -->
+                        <!-- <li><a href="{{ url_for('add_humoresque') }}">Add Hum</a></li> -->
+                    </ul>
+                </nav>
             </div>
         </div>
         <div id="page_container">
