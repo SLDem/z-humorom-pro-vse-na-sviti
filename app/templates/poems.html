@@ -3,6 +3,7 @@
 
     {% for poem in poems.items %}
         {% include "_poem.html" %}
+        <hr>
         <!-- <a href="{{ url_for('del_poem', poem_id=poem.id) }}">DELETE</a> -->
     {% endfor %}
 
