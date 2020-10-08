@@ -10,7 +10,7 @@ Flask-Migrate==2.5.3
 Flask-SQLAlchemy==2.4.4
 Flask-WTF==0.14.3
 WTForms==2.3.3
-Flask-Login==
+Flask-Login==0.5.0
 
 # Other
 psycopg2==2.8.5
