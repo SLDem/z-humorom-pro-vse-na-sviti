@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6eddfa08-cc2b-40e1-a239-e4b7336064fb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/humoresques.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/humoresques.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,9 +87,25 @@
     </todo-panel>
   </component>
   <component name="WindowStateProjectService">
-    <state x="461" y="165" key="SettingsEditor" timestamp="1602164995237">
+    <state width="1899" height="218" key="GridCell.Tab.0.bottom" timestamp="1602165325066">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602164995237" />
+    <state width="1899" height="218" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602165325066" />
+    <state width="1899" height="218" key="GridCell.Tab.0.center" timestamp="1602165325066">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="218" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602165325066" />
+    <state width="1899" height="218" key="GridCell.Tab.0.left" timestamp="1602165325066">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="218" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602165325066" />
+    <state width="1899" height="218" key="GridCell.Tab.0.right" timestamp="1602165325066">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="218" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602165325066" />
+    <state x="852" y="70" key="SettingsEditor" timestamp="1602165323767">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="852" y="70" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602165323767" />
   </component>
 </project>
