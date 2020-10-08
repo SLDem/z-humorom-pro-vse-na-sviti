@@ -61,7 +61,7 @@ a{
     }
 
 body{
-    background: url('/static/day-mnt.jpg') no-repeat center center fixed;
+    background: url('/static/day-mnt.jpg') no-repeat center center float;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
