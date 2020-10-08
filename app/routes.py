@@ -38,6 +38,3 @@ def search():
 
         return render_template('search.html', poems=poems, humoresques=humoresques, form=form, title='Пошук')
     return render_template('search.html', form=form, title='Пошук')
-
-
-
